@@ -66,6 +66,7 @@
 		84760DF92E0C038E009508C6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		84760DFC2E0C0C05009508C6 /* AddBlueToothDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBlueToothDeviceView.swift; sourceTree = "<group>"; };
 		84760DFE2E0C1C15009508C6 /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
+		84760E002E0C22A4009508C6 /* ApplicationConfiguration */ = {isa = PBXFileReference; lastKnownFileType = text; path = ApplicationConfiguration; sourceTree = SOURCE_ROOT; };
 		84A1BAFD2DFB05C100152D79 /* home-assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "home-assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A1BB002DFB05C100152D79 /* home_assistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_assistantApp.swift; sourceTree = "<group>"; };
 		84A1BB022DFB05C100152D79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 		84A1BAFF2DFB05C100152D79 /* home-assistant */ = {
 			isa = PBXGroup;
 			children = (
+				84760E002E0C22A4009508C6 /* ApplicationConfiguration */,
 				84760DE72E0BF59B009508C6 /* View */,
 				84A1BB2D2DFB0F8600152D79 /* Proto */,
 				84A1BB2A2DFB065800152D79 /* Network */,
