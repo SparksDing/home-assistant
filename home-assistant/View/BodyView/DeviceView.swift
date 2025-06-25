@@ -11,11 +11,14 @@ struct DeviceView: View {
     var devices: [Device]
 
     var body: some View {
-        List(devices) { device in
-            DeviceCard(device: device)
+        NavigationView {
+            List(devices) { device in
+                NavigationLink(destination: DeviceDetailView(device: device)) {
+                    DeviceCard(device: device)
+                }
+            }
+            .listStyle(PlainListStyle())
         }
-        .padding(0) // 移除默认的内边距
-        .listStyle(PlainListStyle()) // 使用Plain样式，使List的样式更简单
     }
 }
 
