@@ -6,3 +6,11 @@
 //
 
 
+import Factory
+
+extension Container {
+    public var blueToothWifiConfiguration: Factory<BlueToothBridge> {
+        Factory(self) { BlueToothBridge() }
+            .singleton
+    }
+}
