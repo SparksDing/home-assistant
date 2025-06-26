@@ -35,7 +35,7 @@ let package = Package(
             name: "BlueToothWifiConfigurationTests",
             dependencies: [
                 "Factory",
-                "ApplicationConfiguration",
+                "BlueToothWifiConfiguration",
                 .product(name: "Spyable", package: "swift-spyable"),
             ]),
     ]

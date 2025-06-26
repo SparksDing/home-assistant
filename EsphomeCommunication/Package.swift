@@ -11,13 +11,24 @@ let package = Package(
             name: "EsphomeCommunication",
             targets: ["EsphomeCommunication"]),
     ],
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.27.0"),
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "EsphomeCommunication"),
+            name: "EsphomeCommunication",
+            dependencies: [
+                .product(name: "SwiftProtobuf", package: "swift-protobuf")
+            ]
+        ),
         .testTarget(
             name: "EsphomeCommunicationTests",
-            dependencies: ["EsphomeCommunication"]),
+            dependencies: [
+                "EsphomeCommunication",
+                .product(name: "SwiftProtobuf", package: "swift-protobuf")
+            ]),
     ]
 )

@@ -212,7 +212,6 @@
 				84760E012E0C26B5009508C6 /* BlueToothWifiConfiguration */,
 				84760E002E0C22A4009508C6 /* ApplicationConfiguration */,
 				84760DE72E0BF59B009508C6 /* View */,
-				84A1BB2D2DFB0F8600152D79 /* Proto */,
 				84A1BB2A2DFB065800152D79 /* Network */,
 				84A1BB002DFB05C100152D79 /* home_assistantApp.swift */,
 				84A1BB022DFB05C100152D79 /* ContentView.swift */,
@@ -253,13 +252,6 @@
 				84A1BB2B2DFB067B00152D79 /* SocketManager.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		84A1BB2D2DFB0F8600152D79 /* Proto */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Proto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,9 +397,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-home-assistant-home-assistantUITests/Pods-home-assistant-home-assistantUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-home-assistant-home-assistantUITests/Pods-home-assistant-home-assistantUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -488,9 +484,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-home-assistantTests/Pods-home-assistantTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-home-assistantTests/Pods-home-assistantTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -505,9 +505,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-home-assistant/Pods-home-assistant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-home-assistant/Pods-home-assistant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -756,7 +760,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 224V2C249S;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sparks.home-assistantTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -777,7 +781,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 224V2C249S;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sparks.home-assistantTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -797,6 +801,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 224V2C249S;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sparks.home-assistantUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -816,6 +821,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 224V2C249S;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sparks.home-assistantUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
