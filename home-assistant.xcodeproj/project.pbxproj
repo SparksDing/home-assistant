@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		84760DFA2E0C038E009508C6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DF92E0C038E009508C6 /* SettingsView.swift */; };
 		84760DFD2E0C0C05009508C6 /* AddBlueToothDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DFC2E0C0C05009508C6 /* AddBlueToothDeviceView.swift */; };
 		84760DFF2E0C1C16009508C6 /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DFE2E0C1C15009508C6 /* DeviceDetailView.swift */; };
+		84760E072E0DA766009508C6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84760E062E0DA766009508C6 /* RealmSwift */; };
+		84760E0C2E0DA934009508C6 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 84760E0B2E0DA934009508C6 /* Factory */; };
 		84A1BB012DFB05C100152D79 /* home_assistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1BB002DFB05C100152D79 /* home_assistantApp.swift */; };
 		84A1BB032DFB05C100152D79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1BB022DFB05C100152D79 /* ContentView.swift */; };
 		84A1BB052DFB05C200152D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A1BB042DFB05C200152D79 /* Assets.xcassets */; };
@@ -66,9 +68,9 @@
 		84760DF92E0C038E009508C6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		84760DFC2E0C0C05009508C6 /* AddBlueToothDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBlueToothDeviceView.swift; sourceTree = "<group>"; };
 		84760DFE2E0C1C15009508C6 /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
-		84760E002E0C22A4009508C6 /* ApplicationConfiguration */ = {isa = PBXFileReference; lastKnownFileType = text; path = ApplicationConfiguration; sourceTree = SOURCE_ROOT; };
 		84760E012E0C26B5009508C6 /* BlueToothWifiConfiguration */ = {isa = PBXFileReference; lastKnownFileType = text; path = BlueToothWifiConfiguration; sourceTree = SOURCE_ROOT; };
 		84760E022E0C26F5009508C6 /* EsphomeCommunication */ = {isa = PBXFileReference; lastKnownFileType = text; path = EsphomeCommunication; sourceTree = SOURCE_ROOT; };
+		84760E0D2E0E35C9009508C6 /* AppConfiguration */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppConfiguration; sourceTree = SOURCE_ROOT; };
 		84A1BAFD2DFB05C100152D79 /* home-assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "home-assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A1BB002DFB05C100152D79 /* home_assistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_assistantApp.swift; sourceTree = "<group>"; };
 		84A1BB022DFB05C100152D79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,7 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84760E072E0DA766009508C6 /* RealmSwift in Frameworks */,
 				3FC2D580800306D6FE85A226 /* Pods_home_assistant.framework in Frameworks */,
+				84760E0C2E0DA934009508C6 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,9 +212,9 @@
 		84A1BAFF2DFB05C100152D79 /* home-assistant */ = {
 			isa = PBXGroup;
 			children = (
+				84760E0D2E0E35C9009508C6 /* AppConfiguration */,
 				84760E022E0C26F5009508C6 /* EsphomeCommunication */,
 				84760E012E0C26B5009508C6 /* BlueToothWifiConfiguration */,
-				84760E002E0C22A4009508C6 /* ApplicationConfiguration */,
 				84760DE72E0BF59B009508C6 /* View */,
 				84A1BB2A2DFB065800152D79 /* Network */,
 				84A1BB002DFB05C100152D79 /* home_assistantApp.swift */,
@@ -272,6 +276,10 @@
 			dependencies = (
 			);
 			name = "home-assistant";
+			packageProductDependencies = (
+				84760E062E0DA766009508C6 /* RealmSwift */,
+				84760E0B2E0DA934009508C6 /* Factory */,
+			);
 			productName = "home-assistant";
 			productReference = 84A1BAFD2DFB05C100152D79 /* home-assistant.app */;
 			productType = "com.apple.product-type.application";
@@ -350,6 +358,8 @@
 			mainGroup = 84A1BAF42DFB05C100152D79;
 			packageReferences = (
 				84760E032E0D8A61009508C6 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				84760E0A2E0DA934009508C6 /* XCRemoteSwiftPackageReference "Factory" */,
+				84760E0E2E0E38C1009508C6 /* XCLocalSwiftPackageReference "AppConfiguration" */,
 			);
 			productRefGroup = 84A1BAFE2DFB05C100152D79 /* Products */;
 			projectDirPath = "";
@@ -873,6 +883,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		84760E0E2E0E38C1009508C6 /* XCLocalSwiftPackageReference "AppConfiguration" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = AppConfiguration;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		84760E032E0D8A61009508C6 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -882,7 +899,28 @@
 				version = 10.45.0;
 			};
 		};
+		84760E0A2E0DA934009508C6 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84760E062E0DA766009508C6 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84760E032E0D8A61009508C6 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		84760E0B2E0DA934009508C6 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84760E0A2E0DA934009508C6 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84A1BAF52DFB05C100152D79 /* Project object */;
 }

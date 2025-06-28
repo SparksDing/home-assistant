@@ -5,6 +5,7 @@
 //  Created by admin on 6/25/25.
 //
 
+import AppConfiguration
 import BlueToothWifiConfiguration
 import SwiftUI
 import Combine
@@ -26,7 +27,7 @@ class AddBluetoothViewModel: ObservableObject {
     // 使用 @MainActor 确保在主线程上执行
     func checkWiFiSupport() async {
         do {
-            let state = try await bluetoothBridge.readCharacteristic(from: bluetoothBridge.connectedPeripheral!, characteristicUUID: bluetoothBridge.characteristicUUIDState)
+            let state = try await blueToothBridge.can_identify()
 
             if state == 1 {
                 isWiFiSupported = true
@@ -39,7 +40,7 @@ class AddBluetoothViewModel: ObservableObject {
     // 使用 @MainActor 确保在主线程上执行
     func configureWiFi() async {
         do {
-            let redirectURL = try await bluetoothBridge.provision(ssid: ssid, p: password, stateCallback: { state in
+            let redirectURL = try await blueToothBridge.provision(ssid: ssid, p: password, stateCallback: { state in
                 // 处理状态更新
                 print("当前状态: \(state)")
             })
