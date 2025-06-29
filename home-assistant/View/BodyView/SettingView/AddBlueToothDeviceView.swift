@@ -27,9 +27,9 @@ class AddBluetoothViewModel: ObservableObject {
     // 使用 @MainActor 确保在主线程上执行
     func checkWiFiSupport() async {
         do {
-            let state = try await blueToothBridge.can_identify()
-
-            if state == 1 {
+            let state = try await blueToothBridge.can_identify(entityID: "awesomeservo")
+            print ("wifiSupport: \(state)")
+            if state == true {
                 isWiFiSupported = true
             }
         } catch {
@@ -40,13 +40,13 @@ class AddBluetoothViewModel: ObservableObject {
     // 使用 @MainActor 确保在主线程上执行
     func configureWiFi() async {
         do {
-            let redirectURL = try await blueToothBridge.provision(ssid: ssid, p: password, stateCallback: { state in
-                // 处理状态更新
-                print("当前状态: \(state)")
-            })
-
-            // 配置成功，设置弹框消息
-            configurationResultMessage = "配置完成，重定向 URL: \(redirectURL ?? "无")"
+//            let redirectURL: String = try await blueToothBridge.provision(ssid: ssid, p: password, stateCallback: { state in
+//                // 处理状态更新
+//                print("当前状态: \(state)")
+//            })
+//
+//            // 配置成功，设置弹框消息
+//            configurationResultMessage = "配置完成，重定向 URL: \(redirectURL ?? "无")"
         } catch {
             // 配置失败，设置弹框消息
             configurationResultMessage = "配置 Wi-Fi 失败: \(error.localizedDescription)"

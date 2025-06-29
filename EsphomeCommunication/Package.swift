@@ -14,6 +14,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.27.0"),
+        .package(url: "https://github.com/grpc/grpc-swift.git", from: "2.2.3"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -21,14 +22,16 @@ let package = Package(
         .target(
             name: "EsphomeCommunication",
             dependencies: [
-                .product(name: "SwiftProtobuf", package: "swift-protobuf")
+                .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+                .product(name: "GRPC", package: "grpc-swift"),
             ]
         ),
         .testTarget(
             name: "EsphomeCommunicationTests",
             dependencies: [
                 "EsphomeCommunication",
-                .product(name: "SwiftProtobuf", package: "swift-protobuf")
+                .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+                .product(name: "GRPC", package: "grpc-swift"),
             ]),
     ]
 )

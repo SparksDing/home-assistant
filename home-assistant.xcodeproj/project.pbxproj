@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352568132E1010E800FDC592 /* AppConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 352568122E1010E800FDC592 /* AppConfiguration */; };
+		352568152E1010FC00FDC592 /* BlueToothWifiConfiguration in Frameworks */ = {isa = PBXBuildFile; productRef = 352568142E1010FC00FDC592 /* BlueToothWifiConfiguration */; };
+		352568172E1010FF00FDC592 /* EsphomeCommunication in Frameworks */ = {isa = PBXBuildFile; productRef = 352568162E1010FF00FDC592 /* EsphomeCommunication */; };
+		352568192E10157D00FDC592 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352568182E10157D00FDC592 /* CoreBluetooth.framework */; };
+		3590D6842E100DA300D38EA1 /* AppConfiguration in Resources */ = {isa = PBXBuildFile; fileRef = 3590D6832E100DA300D38EA1 /* AppConfiguration */; };
 		3FC2D580800306D6FE85A226 /* Pods_home_assistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262DB9826222EAB9748A10BB /* Pods_home_assistant.framework */; };
 		838190AF0A05ACF2256AEDC5 /* Pods_home_assistant_home_assistantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797F2BC8851C102417162F03 /* Pods_home_assistant_home_assistantUITests.framework */; };
 		84760DEA2E0BF5D4009508C6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DE92E0BF5D4009508C6 /* HeaderView.swift */; };
@@ -19,8 +24,6 @@
 		84760DFA2E0C038E009508C6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DF92E0C038E009508C6 /* SettingsView.swift */; };
 		84760DFD2E0C0C05009508C6 /* AddBlueToothDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DFC2E0C0C05009508C6 /* AddBlueToothDeviceView.swift */; };
 		84760DFF2E0C1C16009508C6 /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DFE2E0C1C15009508C6 /* DeviceDetailView.swift */; };
-		84760E072E0DA766009508C6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84760E062E0DA766009508C6 /* RealmSwift */; };
-		84760E0C2E0DA934009508C6 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 84760E0B2E0DA934009508C6 /* Factory */; };
 		84A1BB012DFB05C100152D79 /* home_assistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1BB002DFB05C100152D79 /* home_assistantApp.swift */; };
 		84A1BB032DFB05C100152D79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1BB022DFB05C100152D79 /* ContentView.swift */; };
 		84A1BB052DFB05C200152D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A1BB042DFB05C200152D79 /* Assets.xcassets */; };
@@ -50,13 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D5715147D705E45AB9AB5C0 /* Pods-home-assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home-assistant.debug.xcconfig"; path = "Target Support Files/Pods-home-assistant/Pods-home-assistant.debug.xcconfig"; sourceTree = "<group>"; };
-		0FFD7CD145C7DF8EF0FC7E9D /* Pods-home-assistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home-assistantTests.debug.xcconfig"; path = "Target Support Files/Pods-home-assistantTests/Pods-home-assistantTests.debug.xcconfig"; sourceTree = "<group>"; };
 		262DB9826222EAB9748A10BB /* Pods_home_assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home_assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		34B8F231B198B6E0A8EB3A23 /* Pods-home-assistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home-assistantTests.release.xcconfig"; path = "Target Support Files/Pods-home-assistantTests/Pods-home-assistantTests.release.xcconfig"; sourceTree = "<group>"; };
-		55A5BCB98A19C7D2DAABB7E9 /* Pods-home-assistant-home-assistantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home-assistant-home-assistantUITests.debug.xcconfig"; path = "Target Support Files/Pods-home-assistant-home-assistantUITests/Pods-home-assistant-home-assistantUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		352568182E10157D00FDC592 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3590D6832E100DA300D38EA1 /* AppConfiguration */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppConfiguration; sourceTree = SOURCE_ROOT; };
 		5E72D39A4B62AC008BD5FDC7 /* Pods_home_assistantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home_assistantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72E20C3330384FAE1B43FA28 /* Pods-home-assistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home-assistant.release.xcconfig"; path = "Target Support Files/Pods-home-assistant/Pods-home-assistant.release.xcconfig"; sourceTree = "<group>"; };
 		797F2BC8851C102417162F03 /* Pods_home_assistant_home_assistantUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home_assistant_home_assistantUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84760DE92E0BF5D4009508C6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		84760DEB2E0BF5E3009508C6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -70,7 +70,6 @@
 		84760DFE2E0C1C15009508C6 /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
 		84760E012E0C26B5009508C6 /* BlueToothWifiConfiguration */ = {isa = PBXFileReference; lastKnownFileType = text; path = BlueToothWifiConfiguration; sourceTree = SOURCE_ROOT; };
 		84760E022E0C26F5009508C6 /* EsphomeCommunication */ = {isa = PBXFileReference; lastKnownFileType = text; path = EsphomeCommunication; sourceTree = SOURCE_ROOT; };
-		84760E0D2E0E35C9009508C6 /* AppConfiguration */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppConfiguration; sourceTree = SOURCE_ROOT; };
 		84A1BAFD2DFB05C100152D79 /* home-assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "home-assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A1BB002DFB05C100152D79 /* home_assistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_assistantApp.swift; sourceTree = "<group>"; };
 		84A1BB022DFB05C100152D79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,7 +81,6 @@
 		84A1BB1B2DFB05C200152D79 /* home_assistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_assistantUITests.swift; sourceTree = "<group>"; };
 		84A1BB1D2DFB05C200152D79 /* home_assistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home_assistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		84A1BB2B2DFB067B00152D79 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
-		C8269181DFA5A9140627808B /* Pods-home-assistant-home-assistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-home-assistant-home-assistantUITests.release.xcconfig"; path = "Target Support Files/Pods-home-assistant-home-assistantUITests/Pods-home-assistant-home-assistantUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +88,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84760E072E0DA766009508C6 /* RealmSwift in Frameworks */,
+				352568152E1010FC00FDC592 /* BlueToothWifiConfiguration in Frameworks */,
+				352568132E1010E800FDC592 /* AppConfiguration in Frameworks */,
 				3FC2D580800306D6FE85A226 /* Pods_home_assistant.framework in Frameworks */,
-				84760E0C2E0DA934009508C6 /* Factory in Frameworks */,
+				352568192E10157D00FDC592 /* CoreBluetooth.framework in Frameworks */,
+				352568172E1010FF00FDC592 /* EsphomeCommunication in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,22 +115,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2CD4E9EFDAD5FA67091A3DB5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0D5715147D705E45AB9AB5C0 /* Pods-home-assistant.debug.xcconfig */,
-				72E20C3330384FAE1B43FA28 /* Pods-home-assistant.release.xcconfig */,
-				55A5BCB98A19C7D2DAABB7E9 /* Pods-home-assistant-home-assistantUITests.debug.xcconfig */,
-				C8269181DFA5A9140627808B /* Pods-home-assistant-home-assistantUITests.release.xcconfig */,
-				0FFD7CD145C7DF8EF0FC7E9D /* Pods-home-assistantTests.debug.xcconfig */,
-				34B8F231B198B6E0A8EB3A23 /* Pods-home-assistantTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		6192D6D448631F575FAEA9A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				352568182E10157D00FDC592 /* CoreBluetooth.framework */,
 				262DB9826222EAB9748A10BB /* Pods_home_assistant.framework */,
 				797F2BC8851C102417162F03 /* Pods_home_assistant_home_assistantUITests.framework */,
 				5E72D39A4B62AC008BD5FDC7 /* Pods_home_assistantTests.framework */,
@@ -194,7 +182,6 @@
 				84A1BB102DFB05C200152D79 /* home-assistantTests */,
 				84A1BB1A2DFB05C200152D79 /* home-assistantUITests */,
 				84A1BAFE2DFB05C100152D79 /* Products */,
-				2CD4E9EFDAD5FA67091A3DB5 /* Pods */,
 				6192D6D448631F575FAEA9A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -212,7 +199,7 @@
 		84A1BAFF2DFB05C100152D79 /* home-assistant */ = {
 			isa = PBXGroup;
 			children = (
-				84760E0D2E0E35C9009508C6 /* AppConfiguration */,
+				3590D6832E100DA300D38EA1 /* AppConfiguration */,
 				84760E022E0C26F5009508C6 /* EsphomeCommunication */,
 				84760E012E0C26B5009508C6 /* BlueToothWifiConfiguration */,
 				84760DE72E0BF59B009508C6 /* View */,
@@ -277,8 +264,9 @@
 			);
 			name = "home-assistant";
 			packageProductDependencies = (
-				84760E062E0DA766009508C6 /* RealmSwift */,
-				84760E0B2E0DA934009508C6 /* Factory */,
+				352568122E1010E800FDC592 /* AppConfiguration */,
+				352568142E1010FC00FDC592 /* BlueToothWifiConfiguration */,
+				352568162E1010FF00FDC592 /* EsphomeCommunication */,
 			);
 			productName = "home-assistant";
 			productReference = 84A1BAFD2DFB05C100152D79 /* home-assistant.app */;
@@ -357,9 +345,6 @@
 			);
 			mainGroup = 84A1BAF42DFB05C100152D79;
 			packageReferences = (
-				84760E032E0D8A61009508C6 /* XCRemoteSwiftPackageReference "realm-swift" */,
-				84760E0A2E0DA934009508C6 /* XCRemoteSwiftPackageReference "Factory" */,
-				84760E0E2E0E38C1009508C6 /* XCLocalSwiftPackageReference "AppConfiguration" */,
 			);
 			productRefGroup = 84A1BAFE2DFB05C100152D79 /* Products */;
 			projectDirPath = "";
@@ -379,6 +364,7 @@
 			files = (
 				84A1BB082DFB05C200152D79 /* Preview Assets.xcassets in Resources */,
 				84A1BB052DFB05C200152D79 /* Assets.xcassets in Resources */,
+				3590D6842E100DA300D38EA1 /* AppConfiguration in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,7 +686,6 @@
 		};
 		84A1BB222DFB05C200152D79 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D5715147D705E45AB9AB5C0 /* Pods-home-assistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -710,6 +695,9 @@
 				DEVELOPMENT_TEAM = 224V2C249S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "home-assistant/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -731,7 +719,6 @@
 		};
 		84A1BB232DFB05C200152D79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72E20C3330384FAE1B43FA28 /* Pods-home-assistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -741,6 +728,9 @@
 				DEVELOPMENT_TEAM = 224V2C249S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "home-assistant/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -762,7 +752,6 @@
 		};
 		84A1BB252DFB05C200152D79 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FFD7CD145C7DF8EF0FC7E9D /* Pods-home-assistantTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -783,7 +772,6 @@
 		};
 		84A1BB262DFB05C200152D79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34B8F231B198B6E0A8EB3A23 /* Pods-home-assistantTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -804,7 +792,6 @@
 		};
 		84A1BB282DFB05C200152D79 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55A5BCB98A19C7D2DAABB7E9 /* Pods-home-assistant-home-assistantUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -824,7 +811,6 @@
 		};
 		84A1BB292DFB05C200152D79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8269181DFA5A9140627808B /* Pods-home-assistant-home-assistantUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -883,42 +869,18 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		84760E0E2E0E38C1009508C6 /* XCLocalSwiftPackageReference "AppConfiguration" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = AppConfiguration;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		84760E032E0D8A61009508C6 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				kind = exactVersion;
-				version = 10.45.0;
-			};
-		};
-		84760E0A2E0DA934009508C6 /* XCRemoteSwiftPackageReference "Factory" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hmlongco/Factory";
-			requirement = {
-				kind = exactVersion;
-				version = 2.3.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		84760E062E0DA766009508C6 /* RealmSwift */ = {
+		352568122E1010E800FDC592 /* AppConfiguration */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84760E032E0D8A61009508C6 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
+			productName = AppConfiguration;
 		};
-		84760E0B2E0DA934009508C6 /* Factory */ = {
+		352568142E1010FC00FDC592 /* BlueToothWifiConfiguration */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84760E0A2E0DA934009508C6 /* XCRemoteSwiftPackageReference "Factory" */;
-			productName = Factory;
+			productName = BlueToothWifiConfiguration;
+		};
+		352568162E1010FF00FDC592 /* EsphomeCommunication */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EsphomeCommunication;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
