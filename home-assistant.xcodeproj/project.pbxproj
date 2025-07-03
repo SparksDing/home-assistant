@@ -12,8 +12,6 @@
 		352568172E1010FF00FDC592 /* EsphomeCommunication in Frameworks */ = {isa = PBXBuildFile; productRef = 352568162E1010FF00FDC592 /* EsphomeCommunication */; };
 		352568192E10157D00FDC592 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352568182E10157D00FDC592 /* CoreBluetooth.framework */; };
 		3590D6842E100DA300D38EA1 /* AppConfiguration in Resources */ = {isa = PBXBuildFile; fileRef = 3590D6832E100DA300D38EA1 /* AppConfiguration */; };
-		3FC2D580800306D6FE85A226 /* Pods_home_assistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262DB9826222EAB9748A10BB /* Pods_home_assistant.framework */; };
-		838190AF0A05ACF2256AEDC5 /* Pods_home_assistant_home_assistantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797F2BC8851C102417162F03 /* Pods_home_assistant_home_assistantUITests.framework */; };
 		84760DEA2E0BF5D4009508C6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DE92E0BF5D4009508C6 /* HeaderView.swift */; };
 		84760DEC2E0BF5E3009508C6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DEB2E0BF5E3009508C6 /* MenuView.swift */; };
 		84760DEF2E0BF96C009508C6 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84760DEE2E0BF96C009508C6 /* DeviceView.swift */; };
@@ -32,7 +30,6 @@
 		84A1BB1C2DFB05C200152D79 /* home_assistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1BB1B2DFB05C200152D79 /* home_assistantUITests.swift */; };
 		84A1BB1E2DFB05C200152D79 /* home_assistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1BB1D2DFB05C200152D79 /* home_assistantUITestsLaunchTests.swift */; };
 		84A1BB2C2DFB067B00152D79 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A1BB2B2DFB067B00152D79 /* SocketManager.swift */; };
-		C372ED8541DF779FE05C185F /* Pods_home_assistantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E72D39A4B62AC008BD5FDC7 /* Pods_home_assistantTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		262DB9826222EAB9748A10BB /* Pods_home_assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home_assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		352568182E10157D00FDC592 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		3590D6832E100DA300D38EA1 /* AppConfiguration */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AppConfiguration; sourceTree = SOURCE_ROOT; };
-		5E72D39A4B62AC008BD5FDC7 /* Pods_home_assistantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home_assistantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		797F2BC8851C102417162F03 /* Pods_home_assistant_home_assistantUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_home_assistant_home_assistantUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DBFE632E1172FF005ACC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84760DE92E0BF5D4009508C6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		84760DEB2E0BF5E3009508C6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		84760DEE2E0BF96C009508C6 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
@@ -90,7 +85,6 @@
 			files = (
 				352568152E1010FC00FDC592 /* BlueToothWifiConfiguration in Frameworks */,
 				352568132E1010E800FDC592 /* AppConfiguration in Frameworks */,
-				3FC2D580800306D6FE85A226 /* Pods_home_assistant.framework in Frameworks */,
 				352568192E10157D00FDC592 /* CoreBluetooth.framework in Frameworks */,
 				352568172E1010FF00FDC592 /* EsphomeCommunication in Frameworks */,
 			);
@@ -100,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C372ED8541DF779FE05C185F /* Pods_home_assistantTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				838190AF0A05ACF2256AEDC5 /* Pods_home_assistant_home_assistantUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,9 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				352568182E10157D00FDC592 /* CoreBluetooth.framework */,
-				262DB9826222EAB9748A10BB /* Pods_home_assistant.framework */,
-				797F2BC8851C102417162F03 /* Pods_home_assistant_home_assistantUITests.framework */,
-				5E72D39A4B62AC008BD5FDC7 /* Pods_home_assistantTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,6 +188,7 @@
 		84A1BAFF2DFB05C100152D79 /* home-assistant */ = {
 			isa = PBXGroup;
 			children = (
+				35DBFE632E1172FF005ACC76 /* Info.plist */,
 				3590D6832E100DA300D38EA1 /* AppConfiguration */,
 				84760E022E0C26F5009508C6 /* EsphomeCommunication */,
 				84760E012E0C26B5009508C6 /* BlueToothWifiConfiguration */,
@@ -252,11 +242,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A1BB212DFB05C200152D79 /* Build configuration list for PBXNativeTarget "home-assistant" */;
 			buildPhases = (
-				A6BD0A40D94EBDE8EC4A426F /* [CP] Check Pods Manifest.lock */,
 				84A1BAF92DFB05C100152D79 /* Sources */,
 				84A1BAFA2DFB05C100152D79 /* Frameworks */,
 				84A1BAFB2DFB05C100152D79 /* Resources */,
-				EDB437F39BB06E23DD8190E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,11 +264,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A1BB242DFB05C200152D79 /* Build configuration list for PBXNativeTarget "home-assistantTests" */;
 			buildPhases = (
-				2E8CE2B26AB64FBCF47009D6 /* [CP] Check Pods Manifest.lock */,
 				84A1BB092DFB05C200152D79 /* Sources */,
 				84A1BB0A2DFB05C200152D79 /* Frameworks */,
 				84A1BB0B2DFB05C200152D79 /* Resources */,
-				B8862AABCFDA47F25D03A1C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,11 +282,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A1BB272DFB05C200152D79 /* Build configuration list for PBXNativeTarget "home-assistantUITests" */;
 			buildPhases = (
-				2CAAB8CBEEA4F6633F527852 /* [CP] Check Pods Manifest.lock */,
 				84A1BB132DFB05C200152D79 /* Sources */,
 				84A1BB142DFB05C200152D79 /* Frameworks */,
 				84A1BB152DFB05C200152D79 /* Resources */,
-				1C63C69F37A1504804DB5841 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,8 +328,6 @@
 				Base,
 			);
 			mainGroup = 84A1BAF42DFB05C100152D79;
-			packageReferences = (
-			);
 			productRefGroup = 84A1BAFE2DFB05C100152D79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -383,138 +365,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1C63C69F37A1504804DB5841 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-home-assistant-home-assistantUITests/Pods-home-assistant-home-assistantUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-home-assistant-home-assistantUITests/Pods-home-assistant-home-assistantUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-home-assistant-home-assistantUITests/Pods-home-assistant-home-assistantUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2CAAB8CBEEA4F6633F527852 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-home-assistant-home-assistantUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E8CE2B26AB64FBCF47009D6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-home-assistantTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6BD0A40D94EBDE8EC4A426F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-home-assistant-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8862AABCFDA47F25D03A1C1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-home-assistantTests/Pods-home-assistantTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-home-assistantTests/Pods-home-assistantTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-home-assistantTests/Pods-home-assistantTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDB437F39BB06E23DD8190E8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-home-assistant/Pods-home-assistant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-home-assistant/Pods-home-assistant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-home-assistant/Pods-home-assistant-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84A1BAF92DFB05C100152D79 /* Sources */ = {

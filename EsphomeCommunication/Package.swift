@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "EsphomeCommunication",
+    platforms: [
+        .iOS(.v17)
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -13,8 +16,9 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
+        .package(url: "https://github.com/hmlongco/Factory", from: "2.3.0"),
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.27.0"),
-        .package(url: "https://github.com/grpc/grpc-swift.git", from: "2.2.3"),
+        .package(path: "../AppConfiguration"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -22,16 +26,18 @@ let package = Package(
         .target(
             name: "EsphomeCommunication",
             dependencies: [
+                "Factory",
+                "AppConfiguration",
                 .product(name: "SwiftProtobuf", package: "swift-protobuf"),
-                .product(name: "GRPC", package: "grpc-swift"),
             ]
         ),
         .testTarget(
             name: "EsphomeCommunicationTests",
             dependencies: [
+                "Factory",
+                "AppConfiguration",
                 "EsphomeCommunication",
                 .product(name: "SwiftProtobuf", package: "swift-protobuf"),
-                .product(name: "GRPC", package: "grpc-swift"),
             ]),
     ]
 )
